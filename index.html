@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Chatting Room</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+          <span> No Service </span>
+          <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+          <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+          <span>110%</span>
+          <i class="fas fa-battery-full"></i>
+          <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title"> Welcome to Chatting Room</h1>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Nickname"  required/>
+        <input type="text" placeholder="Room name" required/>
+        <input type ="submit" value="Log in"/>
+    </form>
+    <div class="open-room">
+      <h3> open room</h3>
+      <ul></ul>
+    </div>
+    <script src="https://kit.fontawesome.com/6478f529f2.js"
+        crossorigin="anonymous">
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
